@@ -1,6 +1,6 @@
 # Spring Boot
 
-Spring Intializr: https://start.spring.io/
+**Spring Intializr**: https://start.spring.io/
 
 ### Dependencies:
 
