@@ -25,6 +25,14 @@ Spring Intializr: https://start.spring.io/
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+    URL                  | Description
+    ---------------------|------------------------------------
+    /actuator/health     | Health info. about your application
+    /actuator/info       | Info. about your application
+    /actuator/mappings   | endpoints
+    /actuator/beans      | 
+    /actuator/threaddump | 
+
     * **application.properties**
 
                 #expose everything
@@ -35,11 +43,6 @@ Spring Intializr: https://start.spring.io/
                 info.app.description=......
                 info.app.version=1.0.0
 
-    URL                | Description
-    -------------------|------------------------------------
-    /actuator/health   | Health info. about your application
-    /actuator/info     | Info. about your application
-    /actuator/mappings | endpoints
 
 
 
