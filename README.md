@@ -25,21 +25,21 @@ Spring Intializr: https://start.spring.io/
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-* **application.properties**
+    * **application.properties**
 
-        #expose everything
-        management.endpoints.web.exposure.include=*
-        
-        #anything under info. will be monitor at /actuator/info
-        info.app.name=My Project
-        info.app.description=......
-        info.app.version=1.0.0
+                #expose everything
+                management.endpoints.web.exposure.include=*
 
-URL                | Description
--------------------|------------------------------------
-/actuator/health   | Health info. about your application
-/actuator/info     | Info. about your application
-/actuator/mappings | endpoints
+                #anything under info. will be monitor at /actuator/info
+                info.app.name=My Project
+                info.app.description=......
+                info.app.version=1.0.0
+
+    URL                | Description
+    -------------------|------------------------------------
+    /actuator/health   | Health info. about your application
+    /actuator/info     | Info. about your application
+    /actuator/mappings | endpoints
 
 
 
