@@ -84,7 +84,7 @@
                 <scope>runtime</scope>
             </dependency>
 
-    * **Oracle**
+    * **Oracle Driver**
 
             <dependency>
                 <groupId>com.oracle.database.jdbc</groupId>
