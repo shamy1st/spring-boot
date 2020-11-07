@@ -1,5 +1,10 @@
 # Spring Boot
 
+### Why?
+* easier to get started.
+* minimize amount of manual configuration.
+* resolve dependencies conflicts (maven or gradle).
+
 **Spring Intializr**: https://start.spring.io/
 
 ### Dependencies:
@@ -42,6 +47,35 @@
                 info.app.name=My Project
                 info.app.description=......
                 info.app.version=1.0.0
+
+4. **Spring Security**
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+    * "user" with password generated in console (changed each run).
+    * only accessible urls are /actuator/health & /actuator/info
+    * **application.properties**
+
+        #hide /actuator/health & /actuator/info
+        management.endpoints.web.exposure.exclude=health,info
+
+        #override default user
+        spring.security.user.name=ahmed
+        spring.security.user.password=123
+
+
+
+
+
+
+
+
+
+
+
 
 
 
