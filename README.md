@@ -119,7 +119,18 @@
         PUT    | /employess/{employeeId} | update an existing employee
         DELETE | /employess/{employeeId} | delete an existing employee
 
+    * Spring Data REST are HATEOAS compliant
+    * HATEOAS: Hypermedia As The Engine Of Application State.
+    * customize url: example change "employees" to "members"
 
+            @RepositoryRestResource(path="members")
+            public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+                
+            }
+    * customize path: in application.properties file
+
+            spring.data.rest.basePath=/api
+    
 
 
 
