@@ -170,9 +170,22 @@
                 // no need to generate setters/getters
             }
 
+### Run
 
+* **application.properties**
 
+        server.port=6060
+        server.servlet.context-path=/myapp
 
+* **command-line**
+    * option 1:
+    
+            ./mvnw spring-boot:run
+
+    * option 2:
+    
+            ./mvnw package
+            java .jar myapp.jar
 
 
 
