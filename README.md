@@ -67,15 +67,49 @@
                 spring.security.user.name=ahmed
                 spring.security.user.password=123
 
+5. **Spring Data JPA**: JPA, Hibernate, Spring Data
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
 
+6. **Database**
 
+    * **MySQL Driver**
 
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+            </dependency>
 
+    * **Oracle**
 
+            <dependency>
+                <groupId>com.oracle.database.jdbc</groupId>
+                <artifactId>ojdbc8</artifactId>
+                <scope>runtime</scope>
+            </dependency>
 
+7. **Rest Repositories**: Spring Data REST
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
 
+    * spring data rest will scan for JpaRepository
+    * it will expose all CRUD endpoints by default.
+    * the same name of Entity lowercase + "s" (Employee -> employees)
+
+        --     | url                     | description
+        -------|-------------------------|-----------------------------
+        POST   | /employees              | create new employee
+        GET    | /employess              | read a list of employees
+        GET    | /employess/{employeeId} | read a single employee
+        PUT    | /employess/{employeeId} | update an existing employee
+        DELETE | /employess/{employeeId} | delete an existing employee
 
 
 
