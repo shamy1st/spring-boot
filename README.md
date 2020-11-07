@@ -67,12 +67,20 @@
                 spring.security.user.name=ahmed
                 spring.security.user.password=123
 
-5. **Spring Data JPA**: JPA, Hibernate, Spring Data
+5. **Spring Data JPA**: JPA, Hibernate, Spring Data JPA
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+
+    * automatically get these methods: findAll(), findById(), save(), deleteById()
+    * you can add custom queries with JPQL
+    * Query Domain Specific Language (Query DSL)
+
+            public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+                //no need to write any code
+            }
 
 6. **Database**
 
