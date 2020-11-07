@@ -91,6 +91,12 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <scope>runtime</scope>
             </dependency>
+            
+        * database conncetion info: application.properties file
+        
+                spring.datasource.url=jdbc:mysql://localhost:3306/database_name?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+                spring.datasource.username=database_user
+                spring.datasource.password=password
 
     * **Oracle Driver**
 
