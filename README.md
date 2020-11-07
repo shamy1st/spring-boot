@@ -127,10 +127,25 @@
             public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
                 
             }
+            
     * customize path: in application.properties file
 
             spring.data.rest.basePath=/api
-    
+            
+    * **pagination** by default page size = 20, to customize it, from application.properties
+        http://localhost:8080/employees?page=0
+
+            spring.data.rest.default-page-size=50
+            spring.data.rest.max-page-size=
+
+    * **sorting** sort by property name of your Entity: firstName, lastName, email
+        * sort by lastName (ascending by default): 
+                http://localhost:8080/employees?sort=lastName
+        * sort by firstName (descending): 
+                http://localhost:8080/employees?sort=firstName,desc
+        * sort by lastName then firstName (descending): 
+                http://localhost:8080/employees?sort=lastName,firstName,desc
+
 8. **Lombok**: reduce boilerplate code such as setters/getters
 
         <dependency>
