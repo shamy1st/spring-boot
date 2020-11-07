@@ -59,12 +59,12 @@
     * only accessible urls are /actuator/health & /actuator/info
     * **application.properties**
 
-        #hide /actuator/health & /actuator/info
-        management.endpoints.web.exposure.exclude=health,info
-
-        #override default user
-        spring.security.user.name=ahmed
-        spring.security.user.password=123
+                #hide /actuator/health & /actuator/info
+                management.endpoints.web.exposure.exclude=health,info
+                
+                #override default user
+                spring.security.user.name=ahmed
+                spring.security.user.password=123
 
 
 
