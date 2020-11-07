@@ -131,6 +131,26 @@
 
             spring.data.rest.basePath=/api
     
+8. **Lombok**: reduce boilerplate code such as setters/getters
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    * in Entity class just add @Data and setters/getters will be generated automatically.
+    
+            @Entity
+            @Data
+            public class Employee {
+                // fields
+
+                // no need to generate setters/getters
+            }
+
+
+
 
 
 
