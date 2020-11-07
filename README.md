@@ -57,6 +57,7 @@
 
     * "user" with password generated in console (changed each run).
     * only accessible urls are /actuator/health & /actuator/info
+    * customizing spring security: database roles, encrypt password -> follow regular spring security.
     * **application.properties**
 
                 #hide /actuator/health & /actuator/info
