@@ -106,6 +106,24 @@
                 <scope>runtime</scope>
             </dependency>
 
+    * **H2**
+
+                <dependency>
+                    <groupId>com.h2database</groupId>
+                    <artifactId>h2</artifactId>
+                    <scope>runtime</scope>
+                </dependency>
+
+        * database conncetion info: application.properties file
+
+            spring.datasource.url=jdbc:h2:mem:testdb
+            spring.datasource.driverClassName=org.h2.Driver
+            spring.datasource.username=sa
+            spring.datasource.password=password
+            spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+            spring.jpa.show-sql=true
+            spring.h2.console.enable=true
+
 7. **Rest Repositories**: Spring Data REST
 
         <dependency>
