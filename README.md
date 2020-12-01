@@ -115,7 +115,7 @@
                 </dependency>
 
         * database conncetion info: application.properties file
-
+        
                     spring.datasource.url=jdbc:h2:mem:testdb
                     spring.datasource.driverClassName=org.h2.Driver
                     spring.datasource.username=sa
@@ -123,6 +123,10 @@
                     spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
                     spring.jpa.show-sql=true
                     spring.h2.console.enable=true
+
+        * put any SQL in this file resources/data.sql
+        
+        * access from url: http://localhost:8080/h2-console/
 
 7. **Rest Repositories**: Spring Data REST
 
